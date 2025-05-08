@@ -1,0 +1,52 @@
+[
+  {
+    "role": "Software Development Intern – Computer Vision",
+    "organisation": "Casablanca.AI GmbH",
+    "startDate": "Feb 2025",
+    "endDate": "April 2025",
+    "experiences": [
+      "Contributed to the development of an AI-based Python application focused on computer vision.",
+      "Designed and implemented new features for computer vision pipelines.",
+      "Identified and resolved bugs, optimized performance for smoother and faster processing."
+    ],
+    "imageSrc": "history/casablanca.png"
+  },
+  {
+    "role": "Machine Learning Engineer",
+    "organisation": "Buissmaster OMS",
+    "startDate": "Aug 2023",
+    "endDate": "Sep 2023",
+    "experiences": [
+      "Conducted data preprocessing and cleaning using NumPy, Pandas, and Scikit-learn.",
+      "Generated synthetic data and fine-tuned models to enhance accuracy and performance.",
+      "Trained YOLOv8 and Yolo-NAS models, improving precision and recall for object detection.",
+      "Utilized CVAT for data annotation, ensuring high-quality training datasets."
+    ],
+    "imageSrc": "history/buissmaster.png"
+  },
+  {
+    "role": "Python Development Intern",
+    "organisation": "Secure Infotech",
+    "startDate": "Jan 2023",
+    "endDate": "Apr 2023",
+    "experiences": [
+      "Developed a sales analysis dashboard using Power BI for actionable insights.",
+      "Performed web scraping with Selenium and BeautifulSoup to gather real-time data.",
+      "Built GUI-based applications using Tkinter and Python, ensuring ease of use.",
+      "Developed web applications using the Flask framework for efficient backend functionality."
+    ],
+    "imageSrc": "history/secure.png"
+  },
+  {
+    "role": "Shopify Development Intern",
+    "organisation": "Dassys",
+    "startDate": "Jun 2022",
+    "endDate": "Jul 2022",
+    "experiences": [
+      "Built and launched custom Shopify eCommerce websites tailored to client needs.",
+      "Designed responsive themes and integrated secure payment systems.",
+      "Enhanced site functionality by integrating third-party apps for email marketing and cart recovery."
+    ],
+    "imageSrc": "history/dassys.png"
+  }
+]

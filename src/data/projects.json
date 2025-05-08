@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Cold Email Generator",
+    "imageSrc": "projects/email.png",
+    "description": "An automated tool that generates personalized cold emails based on job listings. It uses job descriptions to tailor the email content, helping users increase their chances of landing a job.",
+    "skills": ["Python", "LangChain", "Streamlit", "OpenAI", "Vector Databases"],
+    "demo": "#",
+    "source": "https://github.com/vinaydhorajiya01/Cold-Email-Generator"
+  },
+  {
+    "title": "Research Tool for News Insights",
+    "imageSrc": "projects/research.jpg",
+    "description": "A tool designed to extract insights from articles in the stock market and financial domains. It uses LangChain and OpenAI’s GPT-3 for article processing and insight generation.",
+    "skills": ["LangChain", "OpenAI", "Python", "ChatGPT", "FAISS"],
+    "demo": "#",
+    "source": "https://github.com/vinaydhorajiya01/News-Research-Tool"
+  },
+  {
+    "title": "Power BI Sales Dashboard",
+    "imageSrc": "projects/sales.png",
+    "description": "A dynamic sales dashboard built using Power BI, aimed at providing key insights into sales data, helping businesses track performance, and make data-driven decisions.",
+    "skills": ["Power BI", "Data Analysis", "Sales Analytics", "DAX", "Visualizations"],
+    "demo": "#",
+    "source": "https://github.com/vinaydhorajiya01/Power-BI-Sales-Dashboard"
+  },
+  {
+    "title": "Demand Forecasting with Power BI and Machine Learning",
+    "imageSrc": "projects/demand.png",
+    "description": "A project focused on forecasting demand using historical sales data. Includes a Power BI dashboard for visualizing and predicting trends based on various input features.",
+    "skills": ["Power BI", "Forecasting", "Data Science", "Machine Learning", "DAX", "Python"],
+    "demo": "#",
+    "source": "https://github.com/vinaydhorajiya01/Demand_Forecasting"
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "imageSrc": "projects/portfolio.png",
+    "description": "A personal portfolio website built with React, showcasing projects, skills, and professional experience. It features an interactive design and smooth transitions.",
+    "skills": ["React", "CSS", "JavaScript", "HTML", "Responsive Design"],
+    "demo": "#",
+    "source": "https://github.com/vinaydhorajiya01/portfolio-website"
+  }
+]

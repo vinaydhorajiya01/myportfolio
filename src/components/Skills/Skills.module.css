@@ -1,0 +1,87 @@
+/* Skills.module.css */
+.skillsSection {
+    padding: 60px 10%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: var(--color-text);
+  }
+  
+  .skillCategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .skillCategory {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--color-dark); /* Soft pastel background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+  .skillCategory:hover {
+    box-shadow: 0 10px 20px var(--color-primary, 0.2);
+    transition: 0.3s;
+  }
+  .categoryTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary); /* Light violet for accent */
+    margin-bottom: 20px;
+  }
+  
+  .skillList {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skillList li {
+    font-size: 18px;
+    color: var(--color-text);
+    margin-bottom: 10px;
+  }
+  
+  .cvButton button {
+    text-decoration: none;
+    color: var(--color-bg); /* Light text on primary button */
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 100px;
+    background: var(--color-primary);
+    padding: 1px 22px;
+    margin-top: 2%;
+  }
+  
+  .cvButton button:hover {
+    box-shadow: 0 0 8px 0 rgba(108, 99, 255, 0.6);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillCategories {
+      gap: 20px;
+    }
+  
+    .skillCategory {
+      min-width: 100%;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  }
+  

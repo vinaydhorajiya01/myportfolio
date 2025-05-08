@@ -1,0 +1,59 @@
+@import "../../vars.css";
+
+/* Container styling for the projects section */
+.container {
+  margin-top: 76px;
+  color: var(--color-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Title styling */
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Wrapper for the entire card slider */
+.cardSliderWrapper {
+  width: 100%;
+  overflow: hidden; /* Hides anything outside the visible area */
+  margin-bottom: 40px;
+}
+
+/* Container for the actual rotating cards */
+.cardSlider {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  animation: scroll 20s linear infinite; /* Smooth infinite scroll */
+  will-change: transform;
+}
+
+/* Keyframes for the continuous scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%); /* Move half the width to show part of the first card at the end */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the cards completely out of view */
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

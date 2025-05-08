@@ -1,0 +1,11 @@
+:root {
+  /* Colours */
+  --color-text: #f0f0f0;         /* Soft white – gentle on eyes over dark surfaces */
+  --color-primary: #ffb92a;      /* Warm amber – minimal, elegant highlight */
+  --color-secondary: #2c2c2e;    /* Matte dark gray – great for cards or sections */
+  --color-dark: #1c1c1e;         /* Deep graphite – used for headers/navs */
+  --color-bg: #121212;           /* Almost black – sleek, flat background */
+
+  /* Fonts */
+  --font-roboto: "Roboto", sans-serif;
+}

@@ -1,0 +1,133 @@
+@import "../../vars.css";
+
+.educationSection {
+  padding: 60px 10%;
+  color: var(--color-text);
+  text-align: left;
+  background-color: var(--color-bg);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding-left: 50px;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.timelineContent h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-left: 10px;
+}
+
+.timelineContent p {
+  font-size: 20px;
+  color: var(--color-text); /* Soft slate for supporting text */
+  margin-left: 10px;
+}
+
+.timelineCircle {
+  position: absolute;
+  left: -15px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.timelineItem:hover .timelineCircle {
+  transform: scale(1.5);
+}
+
+.timelineContent {
+  background-color: var(--color-secondary); /* Light periwinkle */
+  padding: 25px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.timelineContent:hover {
+  box-shadow: 0 10px 20px var(--color-primary, 0.2);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.timelineYear {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--color-bg);
+  background-color: var(--color-primary);
+  position: absolute;
+  font-style: italic;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timelineItem ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timelineItem li {
+  font-size: 16px;
+  color: var(--color-text);
+  margin: 10px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-primary);
+  z-index: 0;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    gap: 40px;
+  }
+
+  .timelineItem {
+    flex-direction: column;
+  }
+
+  .timelineYear {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .timelineContent {
+    width: 100%;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+}
