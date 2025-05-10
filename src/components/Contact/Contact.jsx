@@ -84,6 +84,9 @@ export const Contact = () => {
             >
               <img src="./assets/contact/githubIcon.png" alt="GitHub" />
             </a>
+              <button className={styles.button} onClick={() => window.open('./assets/CV.pdf')}>
+                Download CV
+              </button>
           </div>
         </div>
 
