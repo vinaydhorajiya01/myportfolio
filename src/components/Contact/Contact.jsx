@@ -135,6 +135,7 @@ export const Contact = () => {
           </form>
         </div>
       </div>
+        <p>© {new Date().getFullYear()} Vinay Dhorajiya</p>
 
       {/* Success popup */}
       {showPopup && (
