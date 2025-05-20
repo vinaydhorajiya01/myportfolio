@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Skills.module.css';
 import { TiltCard } from './tiltcard';
 
@@ -29,6 +28,7 @@ export const Skills = () => {
             "Matplotlib",
             "LangChain",
             "Streamlit",
+            "ONNX Runtime"
           ]}
         />
         <TiltCard
@@ -46,6 +46,8 @@ export const Skills = () => {
             "Natural Language Processing",
             "Generative AI",
             "Embedded Systems",
+            "Real-Time AI",
+            "Human-Computer Interaction"
           ]}
         />
         <TiltCard
@@ -56,26 +58,35 @@ export const Skills = () => {
           title="Other Tools & Technologies"
           skills={[
             "Flask",
-            "PyQt",
+            "PyQt5",
+            "PyQtChart",
             "Selenium",
             "BeautifulSoup",
             "CVAT",
+            "MoviePy",
+            "Pillow",
+            "AV",
+            "cryptography",
+            "screeninfo",
             "Visual Studio Code",
+            "Jupyter Notebook",
+            "PyCharm",
+            "Google Colab",
             "Android Studio",
             "IntelliJ IDEA",
             "Power BI",
-            "Cursor",
+            "Cursor"
           ]}
         />
         <TiltCard
-          title="Research Skills"
+          title="Research & Engineering Skills"
           skills={[
             "Data Collection",
             "Preprocessing",
             "Model Training",
             "Prompt Engineering",
             "Performance Evaluation",
-            "Fine-tuning",
+            "Fine-tuning"
           ]}
         />
       </div>
