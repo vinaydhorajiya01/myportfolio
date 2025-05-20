@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Skills.module.css';
 import { TiltCard } from './tiltcard';
 
@@ -9,15 +10,15 @@ export const Skills = () => {
       <div className={styles.skillCategories}>
         <TiltCard
           title="Programming Languages"
-          skills={["C", "PHP", "Python", "Java"]}
+          skills={["Python", "Java", "C", "PHP"]}
         />
         <TiltCard
           title="Web Technologies"
-          skills={["HTML", "CSS", "JavaScript", "XML", "Liquidjs"]}
+          skills={["HTML", "CSS", "JavaScript", "React","XML", "Liquidjs", "Flask"]}
         />
         <TiltCard
           title="Database Systems"
-          skills={["MySQL", "SQLite"]}
+          skills={["MySQL", "SQLite", "Vector Databases"]}
         />
         <TiltCard
           title="Data Science & Machine Learning"
@@ -28,16 +29,13 @@ export const Skills = () => {
             "Matplotlib",
             "LangChain",
             "Streamlit",
-            "ONNX Runtime"
+            "ONNX Runtime",
+            "FAISS"
           ]}
         />
         <TiltCard
-          title="Cloud Technologies"
-          skills={["Microsoft Azure"]}
-        />
-        <TiltCard
-          title="DevOps & Version Control"
-          skills={["GitHub"]}
+          title="Cloud & DevOps"
+          skills={["Microsoft Azure", "GitHub"]}
         />
         <TiltCard
           title="Specialized Areas"
@@ -51,31 +49,47 @@ export const Skills = () => {
           ]}
         />
         <TiltCard
-          title="Mathematical & Statistical Tools"
-          skills={["FAISS", "Vector Databases", "OpenCV"]}
-        />
-        <TiltCard
-          title="Other Tools & Technologies"
+          title="GUI & Frontend Frameworks"
           skills={[
-            "Flask",
             "PyQt5",
             "PyQtChart",
-            "Selenium",
-            "BeautifulSoup",
+            "Power BI",
             "CVAT",
+            "screeninfo"
+          ]}
+        />
+        <TiltCard
+          title="Multimedia & Processing Libraries"
+          skills={[
+            "OpenCV",
             "MoviePy",
             "Pillow",
-            "AV",
-            "cryptography",
-            "screeninfo",
+            "AV"
+          ]}
+        />
+        <TiltCard
+          title="Automation & Web Scraping"
+          skills={[
+            "Selenium",
+            "BeautifulSoup"
+          ]}
+        />
+        <TiltCard
+          title="Security & System Integration"
+          skills={[
+            "cryptography"
+          ]}
+        />
+        <TiltCard
+          title="Development Tools & IDEs"
+          skills={[
             "Visual Studio Code",
-            "Jupyter Notebook",
             "PyCharm",
-            "Google Colab",
             "Android Studio",
             "IntelliJ IDEA",
-            "Power BI",
-            "Cursor"
+            "Cursor",
+            "Jupyter Notebook",
+            "Google Colab"
           ]}
         />
         <TiltCard
