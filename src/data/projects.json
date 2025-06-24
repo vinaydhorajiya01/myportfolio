@@ -30,7 +30,7 @@
     "description": "An AI-powered tool that replicates a LinkedIn user's writing style using few-shot prompting with LLaMA 3.3 70B. It extracts metadata from past posts and generates personalized new ones via a responsive Streamlit interface.",
     "skills": ["Python", "Streamlit", "LangChain", "LLaMA 3.3 70B", "Groq API", "Prompt Engineering"],
     "demo": "#",
-    "source": "https://github.com/vinaydhorajiya01/linkedin-post-generatorr"
+    "source": "https://github.com/vinaydhorajiya01/linkedin-post-generator"
   },
   {
     "title": "Demand Forecasting with Power BI and Machine Learning",
