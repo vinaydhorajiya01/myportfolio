@@ -8,6 +8,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background: linear-gradient(to right, var(--color-dark), var(--color-secondary)); /* Gradient background */
+  overflow: hidden;
 }
 
 /* Title styling */
@@ -66,6 +67,8 @@
   display: flex;
   gap: 20px;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .socialLinks .link {
@@ -151,6 +154,90 @@
   .contactForm button {
     font-size: 16px;
   }
+
+  .container {
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .contactInfo {
+    font-size: 16px;
+  }
+
+  .contactInfo h3 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px 12px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    min-height: auto;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    gap: 20px;
+  }
+
+  .contactInfo {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .contactInfo h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .socialLinks {
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .socialLinks .link {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .socialLinks .button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .contactForm {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contactForm .inputField {
+    padding: 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .contactForm button {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
 
 /* Styling for name inputs (First & Last) on same line */
@@ -161,6 +248,33 @@
 
 .nameInputs .inputField {
   width: 48%; /* Set width to 48% so they fit side by side */
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .nameInputs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nameInputs .inputField {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nameInputs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nameInputs .inputField {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 .popup {
   position: fixed;

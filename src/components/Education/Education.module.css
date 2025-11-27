@@ -130,4 +130,54 @@
   .timeline::before {
     display: none;
   }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .timelineContent h3 {
+    font-size: 20px;
+  }
+
+  .timelineContent p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .educationSection {
+    padding: 30px 15px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .timeline {
+    padding-left: 0;
+    gap: 30px;
+  }
+
+  .timelineCircle {
+    left: -5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timelineContent h3 {
+    font-size: 18px;
+  }
+
+  .timelineContent p {
+    font-size: 14px;
+  }
+
+  .timelineContent {
+    padding: 15px;
+  }
+
+  .timelineItem li {
+    font-size: 13px;
+  }
 }

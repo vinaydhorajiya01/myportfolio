@@ -84,4 +84,33 @@
       font-size: 32px;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .skillsSection {
+      padding: 30px 15px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .skillCategory {
+      min-width: 100%;
+      padding: 15px;
+    }
+
+    .categoryTitle {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .skillList li {
+      font-size: 16px;
+    }
+
+    .cvButton button {
+      font-size: 18px;
+    }
+  }
   

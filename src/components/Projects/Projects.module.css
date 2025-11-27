@@ -57,3 +57,20 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .cardSliderWrapper {
+    margin-bottom: 20px;
+  }
+}
