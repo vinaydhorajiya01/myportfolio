@@ -20,8 +20,34 @@
 /* Wrapper for the entire card slider */
 .cardSliderWrapper {
   width: 100%;
-  overflow: hidden; /* Hides anything outside the visible area */
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-bottom: 40px;
+  scroll-behavior: smooth;
+  cursor: grab;
+  padding: 10px 0;
+}
+
+.cardSliderWrapper:active {
+  cursor: grabbing;
+}
+
+/* Hide scrollbar for cleaner look */
+.cardSliderWrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cardSliderWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cardSliderWrapper::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+.cardSliderWrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-hover, #ffc109);
 }
 
 /* Container for the actual rotating cards */
@@ -29,8 +55,9 @@
   display: flex;
   flex-direction: row;
   gap: 15px;
-  animation: scroll 20s linear infinite; /* Smooth infinite scroll */
+  animation: scroll 30s linear infinite;
   will-change: transform;
+  min-width: min-content;
 }
 
 /* Keyframes for the continuous scrolling effect */
@@ -39,10 +66,10 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-50%); /* Move half the width to show part of the first card at the end */
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-100%); /* Move the cards completely out of view */
+    transform: translateX(-100%);
   }
 }
 
