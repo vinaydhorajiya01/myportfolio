@@ -1,45 +1,28 @@
 @import "../../vars.css";
 
-/* Wrapper for the rotating cards */
-.cardSliderWrapper {
-  width: 100%;
-  overflow: hidden; /* Hides anything outside the visible container */
-  margin-bottom: 40px;
-  position: relative;
-}
-
-/* The rotating container of the cards (all cards placed side by side) */
-.cardSlider {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  animation: scroll 20s linear infinite; /* Rotating animation */
-  will-change: transform;
-}
-
 /* Each project card styling */
 .container {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-bg) 100%);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #1a1a1c 0%, rgba(44, 44, 46, 0.8) 100%);
+  box-shadow: 0 20px 50px rgba(255, 193, 9, 0.1);
+  border: 1px solid rgba(255, 193, 9, 0.1);
   padding: 24px;
-  max-width: 350px;
-  min-width: 350px;
   width: 350px;
   margin: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0; /* Prevent the card from shrinking */
-  transform: scale(0.8); /* Start from a smaller size */
-  opacity: 0.7; /* Make it less opaque initially */
-  transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+  transform: scale(0.8);
+  opacity: 0.7;
 }
 
 /* Card hover effects */
 .container:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  opacity: 1; /* Full opacity */
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 30px 70px rgba(255, 193, 9, 0.2);
+  border-color: rgba(255, 193, 9, 0.3);
 }
 
 /* Image styling */
@@ -88,10 +71,12 @@
 .skill {
   font-size: 16px;
   font-weight: 500;
-  background: var(--color-secondary);
+  background: rgba(255, 193, 9, 0.1);
   color: var(--color-text);
   padding: 6px 16px;
   border-radius: 30px;
+  border: 1px solid rgba(255, 193, 9, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hover effect for skill tags */
@@ -99,6 +84,8 @@
   background-color: var(--color-primary);
   color: #fff;
   transform: scale(1.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 5px 15px rgba(255, 193, 9, 0.3);
 }
 
 /* Links section (Demo & Source) */
@@ -116,33 +103,19 @@
   border-radius: 30px;
   padding: 12px 24px;
   background-color: var(--color-primary);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 15px rgba(255, 193, 9, 0.2);
 }
 
 .link:hover {
   background-color: var(--color-hover);
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Keyframes for the continuous scrolling effect */
-@keyframes scroll {
-  0% {
-    transform: translateX(0) scale(0.8); /* Start from small size */
-  }
-  50% {
-    transform: translateX(-50%) scale(1); /* Cards grow to normal size */
-  }
-  100% {
-    transform: translateX(-100%) scale(0.8); /* Cards shrink as they go out of view */
-  }
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 193, 9, 0.4);
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 300px;
-    min-width: 300px;
     width: 300px;
     padding: 18px;
     margin: 10px 5px;
@@ -172,8 +145,6 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    max-width: 270px;
-    min-width: 270px;
     width: 270px;
     padding: 15px;
     margin: 10px 8px;

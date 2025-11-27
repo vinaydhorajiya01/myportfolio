@@ -4,7 +4,7 @@ import styles from "./Hero.module.css";
 
 export const Hero = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="hero">
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Vinay Dhorajiya</h1>
         <p className={styles.description}>AI Engineer | Machine Learning & Computer Vision
@@ -18,8 +18,6 @@ export const Hero = () => {
         alt="Hero image of me"
         className={styles.heroImg}
       />
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
     </section>
   );
 };

@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import styles from "./Projects.module.css"; // Make sure the path is correct
-import projects from "../../data/projects.json"; // Assuming you have the projects data here
-import { ProjectCard } from "./ProjectCard"; // Your ProjectCard component
+import React, { useRef, useState, useEffect } from "react";
+import styles from "./Projects.module.css";
+import projects from "../../data/projects.json";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -13,7 +13,35 @@ export const Projects = () => {
     <ProjectCard key={id} project={project} />
   ));
 
+  // Auto-scroll carousel continuously
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    // Give time for DOM to calculate scrollWidth properly
+    const timer = setTimeout(() => {
+      const scroll = () => {
+        if (!isDragging && slider) {
+          slider.scrollLeft += 0.5;
+
+          // Calculate the halfway point for seamless loop
+          const scrollableWidth = slider.scrollWidth / 2;
+
+          if (slider.scrollLeft >= scrollableWidth) {
+            slider.scrollLeft = 0;
+          }
+        }
+      };
+
+      const interval = setInterval(scroll, 30);
+      return () => clearInterval(interval);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [isDragging]);
+
   const handleMouseDown = (e) => {
+    if (!sliderRef.current) return;
     setIsDragging(true);
     setStartX(e.pageX - sliderRef.current.offsetLeft);
     setScrollLeft(sliderRef.current.scrollLeft);
@@ -28,7 +56,7 @@ export const Projects = () => {
   };
 
   const handleMouseMove = (e) => {
-    if (!isDragging) return;
+    if (!isDragging || !sliderRef.current) return;
     e.preventDefault();
     const x = e.pageX - sliderRef.current.offsetLeft;
     const walk = (x - startX) * 2;
@@ -36,13 +64,14 @@ export const Projects = () => {
   };
 
   const handleTouchStart = (e) => {
+    if (!sliderRef.current) return;
     setIsDragging(true);
     setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
   const handleTouchMove = (e) => {
-    if (!isDragging) return;
+    if (!isDragging || !sliderRef.current) return;
     const x = e.touches[0].pageX - sliderRef.current.offsetLeft;
     const walk = (x - startX) * 2;
     sliderRef.current.scrollLeft = scrollLeft - walk;
@@ -67,9 +96,8 @@ export const Projects = () => {
         onTouchEnd={handleTouchEnd}
       >
         <div className={styles.cardSlider}>
-          {/* Duplicate the project cards to create a seamless loop */}
           {projectCards}
-          {projectCards} {/* Repeat the project cards for infinite loop */}
+          {projectCards}
         </div>
       </div>
     </section>

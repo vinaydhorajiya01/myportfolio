@@ -9,10 +9,13 @@
   .title {
     font-size: 36px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.75px;
     text-transform: uppercase;
-    margin-bottom: 40px;
-    color: var(--color-text);
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-text) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   
   .skillCategories {
@@ -25,22 +28,24 @@
   .skillCategory {
     flex: 1;
     min-width: 250px;
-    background-color: var(--color-dark); /* Soft pastel background */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-secondary) 100%);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 193, 9, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform-style: preserve-3d;
     will-change: transform;
   }
   .skillCategory:hover {
-    box-shadow: 0 10px 20px var(--color-primary, 0.2);
-    transition: 0.3s;
+    box-shadow: 0 20px 50px rgba(255, 193, 9, 0.2);
+    transform: translateY(-10px);
+    border-color: rgba(255, 193, 9, 0.3);
   }
   .categoryTitle {
     font-size: 24px;
     font-weight: bold;
-    color: var(--color-primary); /* Light violet for accent */
+    color: var(--color-primary);
     margin-bottom: 20px;
   }
   
@@ -53,22 +58,32 @@
     font-size: 18px;
     color: var(--color-text);
     margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .skillList li:hover {
+    color: var(--color-primary);
+    transform: translateX(5px);
   }
   
   .cvButton button {
     text-decoration: none;
-    color: var(--color-bg); /* Light text on primary button */
+    color: var(--color-bg);
     font-size: 25px;
     font-weight: 600;
     border-radius: 100px;
     background: var(--color-primary);
-    padding: 1px 22px;
-    margin-top: 2%;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 193, 9, 0.3);
   }
   
   .cvButton button:hover {
-    box-shadow: 0 0 8px 0 rgba(108, 99, 255, 0.6);
-    cursor: pointer;
+    box-shadow: 0 10px 35px rgba(255, 193, 9, 0.6);
+    transform: translateY(-3px);
   }
   
   @media screen and (max-width: 768px) {

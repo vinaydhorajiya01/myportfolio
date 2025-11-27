@@ -4,9 +4,11 @@
   margin-top: 79px;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: var(--color-dark); /* Add a lighter background color */
-  padding: 60px 0;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-secondary) 100%);
+  padding: 60px;
   border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 193, 9, 0.1);
 }
 
 .title {
@@ -16,7 +18,11 @@
   letter-spacing: 1.75px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-text) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .content {
@@ -37,15 +43,18 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  background-color: var(--color-bg);
+  background: linear-gradient(135deg, #1a1a1c 0%, rgba(44, 44, 46, 0.8) 100%);
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(255, 193, 9, 0.1);
+  border: 1px solid rgba(255, 193, 9, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .historyItem:hover {
-  transform: scale(1.05); /* Add hover effect to experience items */
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(255, 193, 9, 0.2);
+  border-color: rgba(255, 193, 9, 0.3);
 }
 
 .historyItemLogo {

@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import styles from "./Navbar.module.css";
+import { useNavbarScroll } from "../../hooks/useNavbarScroll";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
+
+  // Hide navbar on scroll down, show on scroll up
+  useNavbarScroll(navbarRef);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} ref={navbarRef}>
       <a href="/">
       <img src="./assets/nav/logo.png" alt="Portfolio" className={styles.logoImage} />
       </a>
