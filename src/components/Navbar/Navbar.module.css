@@ -6,8 +6,11 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 61px;
+  padding-bottom: 20px;
   z-index: 2;
   margin: 0 10%;
+  height: auto;
+  min-height: 60px;
 }
 
 .logoImage {
