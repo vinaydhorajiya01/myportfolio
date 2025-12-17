@@ -13,7 +13,7 @@
     "imageSrc": "projects/insights.png",
     "description": "Won the Leipzig AI Hackathon by building a real-time, multi-sector funding intelligence platform with AI insights, dashboards, and automated reporting for public-sector decision-making (SAB).",
     "skills": ["Problem Solving", "Design Thinking", "Lovable", "Leadership"],
-    "demo": "#",
+    "demo": "https://ampera-insights.lovable.app",
     "source": "https://ampera-insights.lovable.app"
   },
   {
