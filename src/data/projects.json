@@ -9,6 +9,14 @@
     "source": "https://github.com/vinaydhorajiya01/Cold-Email-Generator"
   },
   {
+    "title": "AI Hackathon - Ampera Insights",
+    "imageSrc": "projects/insights.png",
+    "description": "Won the Leipzig AI Hackathon by building a real-time, multi-sector funding intelligence platform with AI insights, dashboards, and automated reporting for public-sector decision-making (SAB).",
+    "skills": ["Problem Solving", "Design Thinking", "Lovable", "Leadership"],
+    "demo": "#",
+    "source": "https://ampera-insights.lovable.app"
+  },
+  {
     "title": "Research Tool for News Insights",
     "imageSrc": "projects/research.jpg",
     "description": "A tool designed to extract insights from articles in the stock market and financial domains. It uses LangChain and OpenAI’s GPT-3 for article processing and insight generation.",
